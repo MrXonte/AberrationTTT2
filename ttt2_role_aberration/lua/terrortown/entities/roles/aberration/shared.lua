@@ -107,7 +107,7 @@ local function AberrationComputeBuffs(aberration_ply)
 				aberration_ply:AddCredits(1)
 				aberration_ply:PrintMessage(HUD_PRINTTALK, GetConVar("ttt2_abe_damage_per_credit"):GetInt() .. " Damage Taken! You earned 1 credit.")
 			else
-				aberration_ply:PrintMessage(HUD_PRINTTALK, GetConVar("Credit limit reached!"))
+				aberration_ply:PrintMessage(HUD_PRINTTALK, "Credit limit reached!")
 			end
 			aberration_credits_awarded = aberration_credits_awarded + 1
 			aberration_ply.aberration_credits_awarded = aberration_credits_awarded
